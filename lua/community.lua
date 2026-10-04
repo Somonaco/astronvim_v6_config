@@ -1,0 +1,31 @@
+-- AstroCommunity: import any community modules here
+-- We import this file in `lazy_setup.lua` before the `plugins/` folder.
+-- This guarantees that the specs are processed before any user plugins.
+
+---@type LazySpec
+return {
+  "AstroNvim/astrocommunity",
+  { import = "astrocommunity.pack.lua" },
+  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.git.gitgraph-nvim" },
+  { import = "astrocommunity.git.neogit" },
+  -- How to configure?:
+  -- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
+  { import = "astrocommunity.icon.mini-icons" },
+  { import = "astrocommunity.lsp.lspsaga-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
+  { import = "astrocommunity.editing-support.yanky-nvim" },
+  -- { import = "astrocommunity.lsp.lsp-lens-nvim" },
+  -- { import = "astrocommunity.editing-support.hypersonic-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.snippet.mini-snippets" },
+  { import = "astrocommunity.test.crazy-coverage-nvim" },
+  --{ import = "astrocommunity.workflow.precognition-nvim" },
+
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  { import = "astrocommunity.scrolling.satellite-nvim" },
+}
