@@ -1,0 +1,8 @@
+{
+  "copyright": {
+    "prefix": "copyright",
+    "body": ["Copyright (C) ${CURRENT_YEAR}
+All Rights Reserved."],
+    "description": "Snippet to put copyright"
+  }
+}

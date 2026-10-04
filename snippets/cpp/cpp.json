@@ -1,0 +1,10 @@
+{
+"qconnect": {
+      "prefix": "qconnect",
+      "body": ["
+QObject::connect(${1:sender}, &${2:SenderClass}::${3:signal},
+                 ${4:receiver}, &${5:ReceiverClass}::${6:slot});
+            "],
+      "description": "Qt signal-slot connection (function pointer syntax)"
+}
+}
